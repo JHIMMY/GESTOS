@@ -1,0 +1,92 @@
+body{
+    background-color: cadetblue;
+}
+
+body.claro{
+    background-color: darksalmon;
+}
+
+body.oscuro{
+    background-color: midnightblue;
+}
+
+button{
+    width: 100%;
+    /* padding: 0 20px; */
+    height: 50px;
+    margin-top: 20px;
+}
+
+#claro, #oscuro{
+    background-color: darkviolet;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#zona-gestos{
+    margin-top: 20px;
+    background-color:yellowgreen;
+    min-height: 250px;
+    width: 100%;
+}
+
+#zona-gestos.doubletap{
+    -webkit-animation: pulsacion 1.5s 1;
+}
+
+#zona-gestos.press{
+    -webkit-animation: presion 1.5s 1;
+}
+
+#zona-gestos.swipe-derecha{
+    -webkit-animation: swipe-derecha 3s 1;
+}
+
+#zona-gestos.swipe-izquierda{
+    -webkit-animation: swipe-izquierda 3s 1;
+}
+#zona-gestos.rotate{
+    -webkit-animation: rotate 3s 1;
+}
+
+@-webkit-keyframes pulsacion {
+    0%, 100%{
+        background-color: #7FBA67;
+    }
+    50%{
+        background-color: #577A76;
+    }
+}
+
+@-webkit-keyframes presion {
+    0%, 100%{
+        background-color: #7FBA67;
+    }
+    50%{
+        background-color: #577a76;
+    }
+}
+
+@-webkit-keyframes swipe-derecha{
+    0%, 100%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes swipe-izquierda{
+    0%, 100%{
+        width:100%;
+    }
+    50%{
+        width:0%;
+    }
+}
+
+@-webkit-keyframes rotate{
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
